@@ -1056,3 +1056,204 @@ Purple tones */
   }
 }
 
+/* Dark Theme Overrides */
+body.dark-theme {
+  --primary-color: #818cf8;
+  --primary-light: #a5b4fc;
+  --primary-dark: #3730a3;
+  --primary-bg-light: #1e293b;
+  --bg-light: #0f172a;
+  --bg-white: #1e293b;
+  --text-dark: #f8fafc;
+  --text-light: #94a3b8;
+  --text-black: rgb(0, 0, 0);
+}
+/* Make the theme toggle button smaller */
+#theme-toggle {
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  border-radius: 8px;
+}
+
+#theme-toggle i {
+  font-size: 1rem;
+}
+/* Text overrides for dark mode */
+/* 🔧 Force all key text to change in dark mode */
+body.dark-theme,
+body.dark-theme * {
+  color: var(--text-dark) !important;
+}
+
+body.dark-theme .navbar,
+body.dark-theme .footer,
+body.dark-theme .hero,
+body.dark-theme .about,
+body.dark-theme .education,
+body.dark-theme .experience,
+body.dark-theme .projects,
+body.dark-theme .contact {
+  background-color: var(--bg-light) !important;
+}
+
+body.dark-theme .project-card,
+body.dark-theme .education-card,
+body.dark-theme .experience-card,
+body.dark-theme .contact-card,
+body.dark-theme .form-group input,
+body.dark-theme .form-group textarea {
+  background-color: var(--bg-white) !important;
+  color: var(--text-dark) !important;
+  border-color: var(--text-light);
+}
+
+body.dark-theme .button-primary {
+  background-color: var(--primary-light);
+  color: #fff;
+}
+
+body.dark-theme .button-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+body.dark-theme .tech-badge {
+  background-color: #334155;
+  color: #e2e8f0;
+}
+
+/* 🔧 Dark Theme Fixes - Complete Adjustments */
+
+body.dark-theme {
+  --primary-color: #818cf8;
+  --primary-light: #a5b4fc;
+  --primary-dark: #3730a3;
+  --primary-bg-light: #1e293b;
+  --bg-light: #0f172a;
+  --bg-white: #1e2937;
+  --text-dark: #f8fafc;
+  --text-light: #94a3b8;
+}
+
+/* 1. Toggle button visibility fix */
+body.dark-theme #theme-toggle {
+  background-color: transparent;
+  color: #f8fafc;
+  border: 1px solid #64748b;
+}
+
+body.dark-theme #theme-toggle:hover {
+  background-color: #334155;
+}
+
+/* 2. Contact Me & Project buttons */
+body.dark-theme .button-primary,
+body.dark-theme .project-link,
+body.dark-theme .submit-button {
+  background-color: var(--primary-light);
+  color: #fff;
+  border: none;
+}
+
+body.dark-theme .button-primary:hover,
+body.dark-theme .project-link:hover,
+body.dark-theme .submit-button:hover {
+  background-color: var(--primary-dark);
+}
+
+/* 3. Hero section fix – image overlapping text */
+body.dark-theme .hero-text {
+  z-index: 2;
+  color: var(--text-dark);
+}
+
+/* 4. About – Skill card boxes */
+body.dark-theme .skill-card {
+  background-color: #1f2937;
+  border: 1px solid #374151;
+  color: var(--text-dark);
+}
+
+/* 5. Experience – card styling match */
+body.dark-theme .experience-card {
+  background-color: #1e293b;
+  border: 1px solid #475569;
+  color: var(--text-dark);
+}
+
+/* 6. Project section – buttons inherit dark styling */
+body.dark-theme .project-card {
+  background-color: #1f2937;
+  border: 1px solid #475569;
+  color: var(--text-dark);
+}
+
+/* 7. Contact section – Input fields and form box */
+body.dark-theme .contact-card,
+body.dark-theme .form-group input,
+body.dark-theme .form-group textarea {
+  background-color: #1e2937;
+  color: var(--text-dark);
+  border: 1px solid #475569;
+}
+
+body.dark-theme .contact-form-container {
+  background-color: #111827;
+}
+
+/* 8. General fix for all headings and text */
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6,
+body.dark-theme p,
+body.dark-theme a,
+body.dark-theme li,
+body.dark-theme label {
+  color: var(--text-dark);
+}
+
+/* 🌙 Dark Mode – Last Corrections */
+
+
+/* 2. Buttons – consistent color */
+body.dark-theme .button,
+body.dark-theme .button-primary,
+body.dark-theme .submit-button,
+body.dark-theme .project-link {
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+}
+
+body.dark-theme .button:hover,
+body.dark-theme .button-primary:hover,
+body.dark-theme .submit-button:hover,
+body.dark-theme .project-link:hover {
+  background-color: #4338ca;
+}
+
+/* 3. Better text color contrast */
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3 {
+  color: var(--text-dark);
+}
+
+body.dark-theme p,
+body.dark-theme li,
+body.dark-theme a,
+body.dark-theme label {
+  color: var(--text-light);
+}
+
+/* Fix: Home section – location text visibility in dark mode */
+body.dark-theme .location-tag p {
+  /* color: var(--text-black) ; */
+  background-color: grey;
+  border-radius: 5px;
+  box-shadow: 0 0 10px black;
+  padding: 0 5px;
+}
+
