@@ -128,3 +128,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
 });
+
+// Dark Mode Toggle
+const themeToggle = document.getElementById('theme-toggle');
+const icon = themeToggle.querySelector('i');
+const body = document.body;
+
+if (localStorage.getItem("theme") === "dark") {
+  body.classList.add("dark-theme");
+  icon.classList.remove("fa-moon");
+  icon.classList.add("fa-sun");
+}
+
+themeToggle.addEventListener("click", () => {
+  body.classList.toggle("dark-theme");
+  const isDark = body.classList.contains("dark-theme");
+
+  icon.classList.toggle("fa-moon", !isDark);
+  icon.classList.toggle("fa-sun", isDark);
+
+  localStorage.setItem("theme", isDark ? "dark" : "light");
+});
